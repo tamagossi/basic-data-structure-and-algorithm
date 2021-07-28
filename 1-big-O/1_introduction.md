@@ -4,7 +4,20 @@
 
 ### What is Big O?
 
-It is called big O or Big O Asymptonic Analysis. This analysis is the way to analyze how good we are when solving a problem. This things is distinguish between a good coder and bad coder. Big O can determine on of the important aspect to determine a good code, which is <strong>scability</strong>
+Big O Notation is a relative representation of an algorithm's complexity. It describes how an algorithm performs and scales by denoting an upper bound of its growth rate. 
+
+**So, what is Big O Notation? In simple terms:**
+* It is the relative representation of the complexity of an algorithm.
+* It describes how an algorithm performs and scales.
+* It describes the upper bound of the growth rate of a function and could be thought of the worst case scenario.
+
+**How to read a big O notation:**
+Now for a quick look at the syntax: O(n<sup>2</sup>).
+<em>n</em> is the number of elements that the function receiving as <em>inputs</em> . So, this example is saying that for n inputs, its complexity is equal to n<sup>2</sup>
+
+
+(Source)[https://dzone.com/articles/learning-big-o-notation-with-on-complexity]
+
 
 <p align="center">
   <img src="https://miro.medium.com/max/1200/1*j8fUQjaUlmrQEN_udU0_TQ.jpeg" alt="Sublime's custom image" width="1000"/>
@@ -13,7 +26,25 @@ It is called big O or Big O Asymptonic Analysis. This analysis is the way to ana
 
 ### Types of Big O
 
--   **O(n)**
+-   [**O(n)**](#o-n-detailed)
 -   **O(1)**
--   **O(n^2)**
+-   **O(n<sup>2</sup>)**
+-   **O(2<sup>n</sup>)**
+-   **O(log n)**
 -   **O(n!)**
+
+---
+
+<h4 id='o-n-detailed'>O (n)</h4>
+
+<em>O(n)</em> represents the complexity of a function that increases linearly and in direct proportion to the number of inputs. example of with O(n) complexity:
+
+```
+  bool containsName(List<String> names, String nameToFind) {
+    names.forEach((String name) {
+      if (name == nameToFind) return true;
+    });
+
+    return false;
+  }
+```
