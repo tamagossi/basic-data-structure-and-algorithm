@@ -16,7 +16,7 @@ Now for a quick look at the syntax: O(n<sup>2</sup>).
 <em>n</em> is the number of elements that the function receiving as <em>inputs</em> . So, this example is saying that for n inputs, its complexity is equal to n<sup>2</sup>
 
 
-(Source)[https://dzone.com/articles/learning-big-o-notation-with-on-complexity]
+
 
 
 <p align="center">
@@ -27,7 +27,7 @@ Now for a quick look at the syntax: O(n<sup>2</sup>).
 ### Types of Big O
 
 -   [**O(n)**](#o-n-detailed)
--   **O(1)**
+-   [**O(1)**](#o-1-detailed)
 -   **O(n<sup>2</sup>)**
 -   **O(2<sup>n</sup>)**
 -   **O(log n)**
@@ -48,3 +48,17 @@ Now for a quick look at the syntax: O(n<sup>2</sup>).
     return false;
   }
 ```
+___
+
+<h4 id='o-1-detailed'>O (1)</h4>
+
+<em>O(1)</em> represents a function that always takes the same take regardless of input size.
+
+```
+  bool isTheFirstNumberEqualToOne(List<int> numbers) {
+    return numbers[0] == 1
+  }
+```
+___
+
+[**Source**](https://dzone.com/articles/learning-big-o-notation-with-on-complexity)
